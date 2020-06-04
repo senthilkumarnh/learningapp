@@ -6,6 +6,7 @@ export default class WordsSearch extends React.Component
     {
         return (<Form inline>
             <Row> 
+            <label>      Enter Search</label>
             <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
             <Button type="pattern">Search Words</Button>
             </Row>
