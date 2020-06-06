@@ -8,20 +8,24 @@ import {
   Route, 
 } from "react-router-dom";
 import WordsSearch from './Pages/WordsSearch'
+import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <ApplicationNavigation></ApplicationNavigation>
-      <Router>
-        <Switch>
-          <Route path="/home"> 
-            <WordsSearch></WordsSearch>
-          </Route>
-        </Switch>
-      </Router>
-      
-    </div>
+    <Container fluid>
+      <Row>
+        <Col>
+        <ApplicationNavigation></ApplicationNavigation>
+        <Router>
+          <Switch>
+            <Route path="/home"> 
+              <WordsSearch></WordsSearch>
+            </Route>
+          </Switch>
+        </Router>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
